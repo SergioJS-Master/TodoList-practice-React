@@ -44,6 +44,18 @@ export const useTodos = () => {
     }))
   }, [setTodos])
 
+  const editTodo = useCallback((id, editedTodo) => {
+    setTodos((prev) => prev.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          ...editedTodo,
+        }
+      }
+      return todo
+    }))
+  }, [setTodos])
+
   const clearAllTodos = useCallback((e, customArg) => {
     console.log({ e, customArg })
     setTodos([])
@@ -55,5 +67,6 @@ export const useTodos = () => {
     changeStatusTodo,
     deleteTodo,
     addNewTodo,
+    editTodo,
   }
 }

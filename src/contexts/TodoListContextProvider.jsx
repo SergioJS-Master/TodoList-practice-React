@@ -8,12 +8,10 @@ export const TodoListMethodsContext = createContext()
 
 export function TodoListContextWrapper({ children }) {
   const {
-    todos, addNewTodo, deleteTodo, changeStatusTodo, clearAllTodos,
+    todos, ...methods
   } = useTodos()
 
-  const todoListMethods = useMemo(() => ({
-    addNewTodo, deleteTodo, changeStatusTodo, clearAllTodos,
-  }), [])
+  const todoListMethods = useMemo(() => methods, [])
 
   return (
     <TodoListContext.Provider value={todos}>

@@ -6,7 +6,7 @@ export function TodoList() {
 
   const todos = useTodoListContext()
 
-  if (!todos.length) return <p>List is empty...</p>
+  if (!todos.length) return <p>Здесь появятся ваши задачи...</p>
 
   return (
     <ul className="list-group">

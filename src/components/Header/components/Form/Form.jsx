@@ -37,7 +37,7 @@ export function Form() {
         </div>
 
         <button type="submit" className="btn btn-primary">
-          Добавить задачу
+          Добавить
         </button>
       </form>
     </div>

@@ -7,6 +7,7 @@ function Header() {
   return (
     <header className={headerStyles.wr}>
       <Form />
+
     </header>
   )
 }
