@@ -26,7 +26,7 @@ export function TodoItem({ title, id, index, completed }) {
   };
 
   return (
-    <li className="list-group-item d-flex justify-content-between align-items-center">
+    <li className={styles.listGroupItem}>
       <span className={completed ? styles.done : ""}>
         {index + 1}. {title}
       </span>

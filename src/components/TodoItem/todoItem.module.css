@@ -1,3 +1,19 @@
 .done {
 	text-decoration: line-through;
 }
+
+.listGroupItem {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(72, 72, 72);
+	color: white;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 12px;
+	font-size: 20px;
+	transition: ease-in 0.2s; 
+}
+.listGroupItem:hover {
+	background-color: rgb(101, 101, 101);
+    box-shadow: 0px 0px 10px #16c9fa;
+}

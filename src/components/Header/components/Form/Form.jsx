@@ -21,16 +21,16 @@ export function Form() {
   }
 
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center ">
       <form
         onSubmit={submitHandler}
-        className="d-flex flex-column align-items-center"
+        className="d-flex flex-column align-items-center "
       >
         <div className="mb-2">
           <input
             value={title}
             onChange={changeHandler}
-            placeholder="Title..."
+            placeholder="Введите задачу..."
             type="text"
             className="form-control"
           />
